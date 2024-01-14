@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  
+  <script
+      src="https://kit.fontawesome.com/7a4b62b0a4.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                Portfolio
+            </div>
+            <ul id="sidemenu">
+                <a href="#hero"><li>Home</li></a>
+                <a href="#project"><li>Project</li></a>
+                <a href="#contact"><li>Contact</li></a>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"> </i>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="container">
+                <div class="image_content  animate__animated animate__fadeInLeft">
+                    <img src="danish.jpg" alt="">
+                </div>
+                <div class="hero_content">
+                    <h1><span class="hi_text">Hi</span>, I am <span class="name_text">Md Danish</span> </h1>
+                    <h2>Frontend Developer</h2>
+                </div>
+            </div>
+        </section>
+        <section id="project">
+            <div class="container">
+                <h2>PROJECTS</h2>
+                <div class="project_container">
+                    <div class="grid">
+                        <div class="card">
+                            <img src="project1.png" alt="">
+                            <div class="card_content">Tribute Website</div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="card">
+                            <img src="project2.png" alt="">
+                            <div class="card_content">Job Application</div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="card">
+                            <img src="project3.png" alt="">
+                            <div class="card_content">Parallax Website</div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="card">
+                            <img src="project4.png" alt="">
+                            <div class="card_content">Landing Website</div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="card">
+                            <img src="project5.png" alt="">
+                            <div class="card_content">Restsurant Website</div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="card">
+                            <img src="project6.png" alt="">
+                            <div class="card_content">Music Website</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Lets work Together...</h2>
+            
+            <div class="top_contact">
+                <div class="contact_way">
+                    <a href="https://www.linkedin.com/in/md-danish-40b1ab2a9/"><i class="fab fa-linkedin"></i>
+                    </a><h3>linkedin</h3>
+                </div>
+                <div class="contact_way">
+                    <i class="fa fa-twitter"></i>
+                    <h3>Twitter</h3>
+                </div>
+                <div class="contact_way">
+                    <h3>mddanishfatehpur@gmail.com</h3>
+                </div>
+            </div>
+            <div class="bottom_contact">
+                <div class="contact_way">
+                    <a href="https://github.com/Md-Danish-dev"><i class="fab fa-github"></i>
+                    </a><h3>Github</h3>
+                </div>
+                <div class="contact_way">
+                    <i class="fa fa-mobile"></i>
+                    <h3>8757965104</h3>
+                </div>
+            </div>
+            <a href="blank resume.jpg" download class="btn2"><button class="btn">Download CV</button> </a>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            Created By Md Danish
+        </div>
+    </footer>
+
+    <script>
+
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0"
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px"
+        }
+    </script>
+</body>
+</html>
